@@ -1,0 +1,6 @@
+---
+include:
+  - board: seeeduino_xiao_ble
+    shield: 4x3
+##  - board: seeeduino_xiao_ble
+##    shield: settings_reset

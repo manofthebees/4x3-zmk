@@ -27,6 +27,11 @@
             bindings = <&bootloader>;
             key-positions = <2 5 8 11 1 0>;
         };
+
+        gaming_trigger {
+            bindings = <&tog 1>;
+            key-positions = <0 1 2 9 11 10>;
+        };
     };
 
     keymap {
@@ -38,6 +43,15 @@
 &kp N4  &kp N5  &kp N6
 &kp N7  &kp N8  &kp N9
 &kp F2  &kp N0  &kp BSPC
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp R  &kp F  &kp SPACE
+&kp E  &kp D  &kp LSHFT
+&kp W  &kp S  &kp TAB
+&kp Q  &kp A  &kp ESC
             >;
         };
     };

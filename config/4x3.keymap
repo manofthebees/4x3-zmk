@@ -32,6 +32,11 @@
             bindings = <&tog 1>;
             key-positions = <0 1 2 9 11 10>;
         };
+
+        nav_trigger {
+            bindings = <&tog 2>;
+            key-positions = <9 11 7>;
+        };
     };
 
     keymap {

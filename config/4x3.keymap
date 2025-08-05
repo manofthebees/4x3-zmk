@@ -54,5 +54,14 @@
 &kp Q  &kp A  &kp ESC
             >;
         };
+
+        nav {
+            bindings = <
+&trans          &kp UP_ARROW  &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT
+&trans          &trans        &trans
+&trans          &trans        &kp ENTER
+            >;
+        };
     };
 };

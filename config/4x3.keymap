@@ -12,6 +12,8 @@
             label = "F2_CTRLA_ENT";
             #binding-cells = <0>;
             bindings = <&kp F2>, <&kp LC(A)>, <&kp ENTER>;
+
+            tapping-term-ms = <400>;
         };
     };
 

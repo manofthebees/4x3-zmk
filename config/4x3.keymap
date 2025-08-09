@@ -5,18 +5,13 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1650  // default is 600
 
-&soft_off { hold-time-ms = <3000>; };
-
 / {
     behaviors {
-        power_off: power_off {
-            compatible = "zmk,behavior-hold-tap";
-            label = "POWER_OFF";
-            bindings = <&soft_off>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
+        tapd: tapd {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPD";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&kp LC(A)>, <&kp ENTER>;
         };
     };
 
@@ -47,7 +42,7 @@
 &kp N1  &kp N2  &kp N3
 &kp N4  &kp N5  &kp N6
 &kp N7  &kp N8  &kp N9
-&kp F2  &kp N0  &kp BSPC
+&tapd   &kp N0  &kp BSPC
             >;
         };
 
